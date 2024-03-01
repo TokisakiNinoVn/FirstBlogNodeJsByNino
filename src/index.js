@@ -49,7 +49,6 @@ app.post("/search", (request, response) => {
     response.send("");
 });
 
-
 app.listen(port, () => {
     console.log(`>> Ctrl + Click: http://localhost:${port}`)
 });

@@ -1,2 +1,4 @@
 1. Mặc định của tag <form> html là `methomethod="get"`, ``action="`./path`"`` để chuyển đường dẫn mang theo các `QueryString Parameters` trong form và chuyển tới trang mới trong `methomethod="get"`.
-2. 
+2. Body-parser/qs npm 
+    Express 4.16 tích hợp sẵn frame Body-parser.
+    > https://www.fortunehost.com/blog/wp-content/uploads/2018/11/Controller-MVC-to-Javascript.png (mvc model).
