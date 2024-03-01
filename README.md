@@ -1,15 +1,22 @@
->> How to run app: 
-    1. Open folder app or use `cd <folder_project>` on terminal.
-    2. Use `npm start` to start.
-    3. Click for link on terminal.
-    4. Open new Terminal > run `npm run watch` (Listen change file and Convert file `.scss` to `css`).
+## 🍀Edited by Tokisaki Nino 🍀
+>> How to run:
+1. Open the folder application or use `cd <folder_project>` on the terminal.
+2. Use `npm start` to get started.
+3. Click the link on Terminal.
+4. (If using SASS) Open a new Terminal > run `npm run watch` (Listen for file changes and Convert `.scss` file to `css`).
 
->> Note: 
-    - Edit/Write code on folder `src`.
-    - File `.gitignore` unselect file commit to github.
-    - Web is use Bootstrap 5. (`src/resources/views/layouts/main.hbs` on tag `head`)
+>> Note:
+- Edit/Write code into `src` folder.
+- The `.gitignore` file deselects files committed to github.
+- Web is using Bootstrap 5. (`src/resources/views/layouts/main.hbs` on `head` tag)
 
->> Node sass: 
-    `<a href="https://www.npmjs.com/package/node-sass" target="_blank">Node Sass</a>`
-    On terminal run: `npm run watch`
-    Only write code on file `app.scss`
+>> NodeSASS:
+- <a href="https://www.npmjs.com/package/node-sass" target="_blank">Document</a>
+- When running terminal: `npm run watch`
+- Write code only on the `app.scss` file
+
+## 🍀Contact me
+- **GitHub:** [TokisakiNinoVn](https://github.com/TokisakiNinoVn).
+- **Discord:** [tokisakinino](link).
+- **Twitter:** [_tokisaki_nino](https://twitter.com/_tokisaki_nino).
+- **Instagram:** [nino.real.memories](https://www.instagram.com/nino.real.memories/).

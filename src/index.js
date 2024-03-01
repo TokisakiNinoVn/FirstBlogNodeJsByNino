@@ -13,6 +13,7 @@ app.use(express.urlencoded(
     }
 )); //Middleware
 app.use(express.json()); //Middleware
+
 // HTTP logger
 // app.use(morgan("combined"));
 
@@ -32,6 +33,7 @@ app.get("/", (request, response) => {
 app.get("/news", (request, response) => {
     response.render("news");
 });
+
 app.post("/news", (request, response) => {
     console.log(">> All Query: " + JSON.stringify(request.query));
     console.log(">> q: " + JSON.stringify(request.query.q));
