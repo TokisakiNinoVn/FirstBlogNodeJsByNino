@@ -7,6 +7,12 @@ const port = 3000;
 
 app.use(express.static(path.join(__dirname, "public")))
 
+app.use(express.urlencoded(
+    {
+        extended: true,
+    }
+)); //Middleware
+app.use(express.json()); //Middleware
 // HTTP logger
 // app.use(morgan("combined"));
 
@@ -18,13 +24,32 @@ app.engine("hbs", engine({
 app.set("view engine", "hbs");
 app.set("views", path.join(__dirname, "resources/views"));
 
+// Application/Page
+app.get("/", (request, response) => {
+    response.render("home");
+});
 
-app.get("/", (req, res) => {
-    res.render("home");
+app.get("/news", (request, response) => {
+    response.render("news");
 });
-app.get("/news", (req, res) => {
-    res.render("news");
+app.post("/news", (request, response) => {
+    console.log(">> All Query: " + JSON.stringify(request.query));
+    console.log(">> q: " + JSON.stringify(request.query.q));
+    response.render("search");
 });
+
+app.get("/search", (request, response) => {
+    console.log(">> All Query: " + JSON.stringify(request.query));
+    console.log(">> q: " + JSON.stringify(request.query.q));
+    response.render("search");
+});
+
+app.post("/search", (request, response) => {
+    console.log(">> All Query: " + JSON.stringify(request.body))
+    response.send("");
+});
+
+
 app.listen(port, () => {
     console.log(`>> Ctrl + Click: http://localhost:${port}`)
 });

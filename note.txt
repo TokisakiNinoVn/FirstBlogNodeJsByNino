@@ -1,0 +1,2 @@
+1. Mặc định của tag <form> html là `methomethod="get"`, ``action="`./path`"`` để chuyển đường dẫn mang theo các `QueryString Parameters` trong form và chuyển tới trang mới trong `methomethod="get"`.
+2. 
